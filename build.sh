@@ -2,6 +2,8 @@
 
 #set -e
 
+DATE_POSTFIX=$(date +"%Y%m%d")
+
 ## Copy this script inside the kernel directory
 KERNEL_DIR=$PWD
 KERNEL_TOOLCHAIN=/home/gtrcraft/data/validus/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
@@ -9,7 +11,7 @@ KERNEL_DEFCONFIG=potter_defconfig
 DTBTOOL=$KERNEL_DIR/Dtbtool/
 JOBS=16
 ANY_KERNEL2_DIR=$KERNEL_DIR/AnyKernel2/
-FINAL_KERNEL_ZIP=Optimus_Drunk_Potter.zip
+FINAL_KERNEL_ZIP=Optimus_Drunk_Potter-$DATE_POSTFIX.zip
 # Speed up build process
 MAKE="./makeparallel"
 
