@@ -2,7 +2,7 @@
 
 #set -e
 
-DATE_POSTFIX=$(date +"%Y%m%d")
+DATE_POSTFIX=$(date +"%d%m%Y")
 
 ## Copy this script inside the kernel directory
 KERNEL_DIR=$PWD
