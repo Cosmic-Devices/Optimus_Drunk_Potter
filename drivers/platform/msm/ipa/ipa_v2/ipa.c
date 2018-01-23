@@ -2110,7 +2110,7 @@ int ipa_q6_pre_shutdown_cleanup(void)
 	}
 	if (ipa_q6_clean_q6_tables()) {
 		IPAERR("Failed to clean Q6 tables\n");
-		BUG();
+		//BUG();
 	}
 	if (ipa_q6_set_ex_path_dis_agg()) {
 		IPAERR("Failed to disable aggregation on Q6 pipes\n");
