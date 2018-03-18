@@ -14,6 +14,7 @@ export TOOL_CHAIN_PATH="/home/gtrcraft/data/validus/prebuilts/gcc/linux-x86/aarc
 export CLANG_TCHAIN="/home/gtrcraft/data/kernel/clang/clang-4579689/bin/clang"
 export LD_LIBRARY_PATH="${TOOL_CHAIN_PATH}/../lib"
 export PATH=$PATH:${TOOL_CHAIN_PATH}
+export KBUILD_COMPILER_STRING="clang version 6.0.1"
 
 kmake() {
 	        make CC="${CLANG_TCHAIN}" \
